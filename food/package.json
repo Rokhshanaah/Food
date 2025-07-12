@@ -1,0 +1,16 @@
+{
+  "name": "foodie-hub-backend",
+  "version": "1.0.0",
+  "description": "Backend for Foodie Hub - Public Food Ordering System",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ejs": "^3.1.9",
+    "pg": "^8.11.1",
+    "body-parser": "^1.20.2",
+    "method-override": "^3.0.0"
+  }
+}

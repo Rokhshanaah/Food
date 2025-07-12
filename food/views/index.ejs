@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Foodie Hub - Menu</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1>Foodie Hub - Menu</h1>
+  <a href="/foods/new">Add New Food</a>
+  <ul>
+    <% foods.forEach(food => { %>
+      <li>
+        <a href="/foods/<%= food.id %>"><%= food.name %></a> - $<%= food.price %>
+        <form method="POST" action="/foods/<%= food.id %>?_method=DELETE" style="display:inline">
+          <button type="submit">Delete</button>
+        </form>
+        <a href="/foods/<%= food.id %>/edit">Edit</a>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title><%= food.name %> Details</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <h1><%= food.name %></h1>
+  <p><strong>Description:</strong> <%= food.description %></p>
+  <p><strong>Price:</strong> $<%= food.price %></p>
+  <a href="/">Back to Menu</a> | <a href="/foods/<%= food.id %>/edit">Edit</a>
+</body>
+</html>
